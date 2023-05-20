@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversion</title>
+  <link rel="stylesheet" href="../style.css">
+<script src="../index.js"></script>
+</head>
+<body>
+    <nav>
+  <h2>Convert:</h2>
+  <ul>
+    <li><a href="distance.html">Length/Distance</a></li>
+    <li><a href="weight.html">Weight/Mass</a></li>
+    <li><a href="volume.html">Volume</a></li>
+    <li><a href="time.html">Time</a></li>
+    <li><a href="currency.html">Currency</a></li>
+  </ul>
+</nav>
+<p>Currency</p>
+    <form>
+      <select id="conversionOption" onchange="chooseConversion()">
+        <option value="0" selected>select</option>
+        <option value="dteC">Dollars to euros</option>
+        <option value="etpC">Euros to pounds</option>
+        <option value="ytdC">Yen to dollars</option>
+      </select>
+    </form>
+    <p id="unitsName1"> </p>
+    <input oninput="convertUnits(document.getElementById('column1').value,document.getElementById('column2').value)" type="number" name="column1" id="column1"> <a id="sum1"></a>
+    
+    <p id="unitsName2"></p>
+   <input oninput="convertUnits(document.getElementById('column1').value,document.getElementById('column2').value)" type="number" name="column2" id="column2"><a id="sum2"></a>
+</body>
+</html>
