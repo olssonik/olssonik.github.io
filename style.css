@@ -1,0 +1,78 @@
+body    {
+    font-family: 'Courier New', monospace;
+    background-color: #0e0d15;
+  }
+
+h1  {
+    margin:0;
+    padding: 80px;
+    font-weight:bold;
+    letter-spacing:10px;
+    font-size:8rem;
+    }
+
+h2  {
+    font-weight:bold;
+    letter-spacing:10px;
+    font-size: 50px;
+    text-align: center;
+    }
+
+p  {
+    margin-left: 8%;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: white;
+    }
+
+
+.break-after-words {
+    white-space: pre-wrap;
+    }
+
+.aboutme {
+    border: 10px solid greenyellow;  
+    margin: auto;
+    width: 45%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+}
+
+.title   {
+    background: url('img/Snapchat-533993560.jpg');
+    background-position: 20%;
+    background-size:cover;
+    min-height: 500px;
+    padding:1rem 5rem 5rem 5rem;
+    text-align:center;
+    color: greenyellow;
+    position:relative;
+    }
+
+.ptitle {
+    text-align:left ;
+    color: white;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20  vh;
+  }
+
+  .image-container {
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .image-container img {
+    width: 200px;
+    height: 200px;
+  }
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
