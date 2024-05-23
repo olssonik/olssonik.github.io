@@ -1,59 +1,4 @@
-const skills = [
-  "JavaScript",
-  "PowerShell",
-  "Python",
-  "Bash",
-  "Linux (Debian, Arch)",
-  "Docker",
-  "Nmap",
-  "NodeJS",
-  "SolidJS",
-  "ExpressJS",
-  "React",
-  "MySQL",
-  "Git",
-  "VMware",
-  "TCP/UDP",
-  "AWS",
-  "Azure",
-  "Google Cloud",
-  "Jenkins",
-  "Jira",
-  "Grafana",
-  "ITIL",
-  "ServiceNow",
-  "DNS",
-  "SAAS",
-  "IAAS",
-  "IAAC",
-  "PAAC",
-  "PAAS",
-  "HTTPS",
-  "HTTP",
-  "SFTP",
-  "FTP",
-  "ARP",
-  "SSL",
-  "LAN",
-  "WLAN",
-  "WAN",
-  "Subnet",
-  "RDP",
-];
-
-skills.forEach((skill) => {
-  i++;
-  const newDiv = `
-          <div class="col" ><li>${skill}</li></div>
-      `;
-
-  const containDiv = document.getElementById("skills");
-  containDiv.innerHTML += newDiv;
-});
-
-const url = `https://api.github.com/users/olssonik/repos`;
-
-fetch(url)
+fetch("https://api.github.com/users/olssonik/repos")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
@@ -66,13 +11,17 @@ fetch(url)
       const repourl = `https://github.com/olssonik/${repo.name}`;
 
       const newDiv = `
-          <div class="col">
-              <img  src="./assets/folder.gif">
-              <div class="reponame" ><a href="${repourl}">${repo.name}</a></div>
-              <div class="repodisc" >${repo.description}</div>
-              <p>last update: ${repo.updated_at}</p>
-          </div>
-          `;
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">${repo.name}</h5>
+          <p class="card-text">${repo.description}</p>
+          ${repo.updated_at.slice(0, 10)}
+        </div>
+        <div class="card-footer text-body-secondary">
+          <a href="${repourl}" class="btn btn-primary">${repo.name}</a>
+        </div>
+      </div>
+      `;
 
       const containDiv = document.getElementById("repos");
       containDiv.innerHTML += newDiv;
@@ -81,18 +30,3 @@ fetch(url)
   .catch((error) => {
     console.error("There was a problem with your fetch operation:", error);
   });
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}

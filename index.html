@@ -2,20 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oli</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
     <link
@@ -24,188 +20,131 @@
       type="image/x-icon"
     />
   </head>
-
   <body>
-    <div class="container">
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis">Oliwier Borozynski</h1>
-        <div class="col-lg-6 mx-auto">
-          <a
-            class="lead mb-4"
-            style="text-decoration: none"
-            target="_blank"
-            href="mailto:oliwier.borozynski@outlook.com"
-            >oliwier.borozynski@outlook.com</a
-          >
-          <br />
-          <a
-            style="font-size: 40px"
-            target="_blank"
-            href="mailto:oliwier.borozynski@outlook.com"
-            ><i class="fa fa-envelope"></i
-          ></a>
-          <a
-            style="font-size: 40px"
-            target="blank"
-            href="https://github.com/olssonik"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            style="font-size: 40px"
-            target="blank"
-            href="https://www.linkedin.com/in/oliwier-borozynski/"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </div>
+    <header class="jumbotron text-center">
+      <h1 class="display-4">Oliwier Borozynski</h1>
+      <div class="col-lg-6 mx-auto">
+        <a
+          class="lead mb-4"
+          style="text-decoration: none"
+          target="_blank"
+          href="mailto:oliwier.borozynski@outlook.com"
+          >oliwier.borozynski@outlook.com</a
+        >
+        <br />
+        <a
+          style="font-size: 40px"
+          target="_blank"
+          href="mailto:oliwier.borozynski@outlook.com"
+          ><i class="fa fa-envelope"></i
+        ></a>
+        <a
+          style="font-size: 40px"
+          target="blank"
+          href="https://github.com/olssonik"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          style="font-size: 40px"
+          target="blank"
+          href="https://www.linkedin.com/in/oliwier-borozynski/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
       </div>
-      <div class="text-center">
-        <div class="d-flex justify-content-center">
-          <div class="card border-info mb-3" style="max-width: 80%">
+    </header>
+
+    <section id="about" class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p class="h4">
+        I am a self-taught web developer who is skilled in both frontend and
+        backend development. I have improved my abilities in creating
+        user-friendly websites through personal projects. I have also explored
+        Linux, becoming proficient in its command line and scripting. This
+        knowledge allows me to efficiently handle systems and networks for
+        software development.
+      </p>
+    </section>
+
+    <section id="projects" class="container mt-5">
+      <h2 class="mb-4">Highlighted Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://private-user-images.githubusercontent.com/78812304/307963345-2331d3b9-746d-4abd-a995-be11e16b9ee4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY0ODgyNDYsIm5iZiI6MTcxNjQ4Nzk0NiwicGF0aCI6Ii83ODgxMjMwNC8zMDc5NjMzNDUtMjMzMWQzYjktNzQ2ZC00YWJkLWE5OTUtYmUxMWUxNmI5ZWU0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTIzVDE4MTIyNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzN2MyOTcwNjFhN2YwZjQyMTdmZGNiYWI1ZjNlNDkxY2I1ZGU2YWY5ZWE3ZDcxZThmN2EzMGNjZDVjNDAzNmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.tCij9kPOaKDQg-F5atK3DVqcpswigoQrEK83pQyKX4Y"
+              class="card-img-top"
+              alt="Project 1"
+            />
             <div class="card-body">
-              <h5 class="card-title">
-                I am a self-taught web developer who is skilled in both frontend
-                and backend frameworks. I have improved my abilities in creating
-                user-friendly websites through personal projects. I have also
-                explored Linux, becoming proficient in its command line and
-                scripting. This knowledge allows me to efficiently handle
-                systems and networks for web development. My main objective is
-                to focus on cybersecurity, as I am passionate about protecting
-                digital assets and fighting against online threats.
-              </h5>
+              <h5 class="card-title">API test</h5>
+              <p class="card-text">
+                Testing a commercially developed api (real life scenario) this
+                project was a test of the machine that was supposed to show if
+                it can handle eleven thousand api calls and show how long from
+                the moment where get request call is made to server giving a
+                response
+              </p>
+              <a
+                href="https://github.com/olssonik/apiTesting"
+                class="btn btn-primary"
+                >View Project</a
+              >
             </div>
           </div>
         </div>
 
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button
-              class="nav-link active"
-              id="nav-home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-home"
-              type="button"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-            >
-              Highlighted Projects
-            </button>
-            <button
-              class="nav-link"
-              id="nav-profile-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-profile"
-              type="button"
-              role="tab"
-              aria-controls="nav-profile"
-              aria-selected="false"
-            >
-              All Projects
-            </button>
-            <button
-              class="nav-link"
-              id="nav-skill-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-skill"
-              type="button"
-              role="tab"
-              aria-controls="nav-skill-tab"
-              aria-selected="false"
-            >
-              All Skills
-            </button>
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="nav-home"
-            role="tabpanel"
-            aria-labelledby="nav-home-tab"
-            tabindex="0"
-          >
-            <div class="container d-flex justify-content-center">
-              <div class="row row-cols-5">
-                <div class="card border-info" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">API Tests</h5>
-                    <p class="card-text mb-2">
-                      Testing a commercially developed api (real life scenario)
-                      this project was a test of the machine that was supposed
-                      to show if it can handle eleven thousand api calls and
-                      show how long from the moment where get request call is
-                      made to server giving a response
-                    </p>
-                    <a
-                      href="https://github.com/olssonik/apiTesting"
-                      class="card-link"
-                      >Link</a
-                    >
-                  </div>
-                </div>
-                <div class="card border-info" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Azure Pipeline</h5>
-                    <p class="card-text mb-2">
-                      I wrote a pipeline for Azure Devops using PowerShell and
-                      YAML file
-                    </p>
-                    <a
-                      href="https://github.com/olssonik/azurePipelines"
-                      class="card-link"
-                      >Link</a
-                    >
-                  </div>
-                </div>
-                <div class="card border-info" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Thermal Detection</h5>
-                    <p class="card-text mb-2">
-                      Purpose of this project is to use computer vision and
-                      recognise hot temperatures on a thermal camera recordings.
-                    </p>
-                    <a
-                      href="https://github.com/olssonik/thermal-detection"
-                      class="card-link"
-                      >Link</a
-                    >
-                  </div>
-                </div>
-              </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://github.com/olssonik/thermal-detection/blob/main/assets/example.png?raw=true"
+              class="card-img-top"
+              alt="Project 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Thermal Detection</h5>
+              <p class="card-text">
+                Purpose of this project is to use computer vision and recognise
+                hot temperatures on a thermal camera recordings.
+              </p>
+              <a
+                href="https://github.com/olssonik/thermal-detection"
+                class="btn btn-primary"
+                >View Project</a
+              >
             </div>
           </div>
+        </div>
 
-          <div
-            class="tab-pane fade"
-            id="nav-profile"
-            role="tabpanel"
-            aria-labelledby="nav-profile-tab"
-            tabindex="0"
-          >
-            <div class="container text-center">
-              <div id="repos" class="row row-cols-3"></div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="nav-skill"
-            role="tabpanel"
-            aria-labelledby="nav-skill-tab"
-            tabindex="0"
-          >
-            <div class="container text-start">
-              <div id="skills" class="row row-cols-4"></div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://github.com/olssonik/azurePipelines/blob/main/assets/testing.png?raw=true"
+              class="card-img-top"
+              alt="Project 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Azure Pipeline</h5>
+              <p class="card-text">
+                I wrote a pipeline for Azure Devops using PowerShell and YAML
+                file
+              </p>
+              <a
+                href="https://github.com/olssonik/azurePipelines"
+                class="btn btn-primary"
+                >View Project</a
+              >
             </div>
           </div>
         </div>
       </div>
-    </div>
-
+      <h2 class="mb-4">All Projects</h2>
+      <div class="container text-center">
+        <div id="repos" class="row row-cols-3"></div>
+      </div>
+    </section>
     <script src="js/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
